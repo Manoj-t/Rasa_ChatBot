@@ -5,6 +5,9 @@ intents:
   - mood_deny
   - mood_great
   - mood_unhappy
+  - restaurant_search
+  - behavioral_greet
+  - thankyou
 
 actions:
 - utter_greet
@@ -12,6 +15,9 @@ actions:
 - utter_did_that_help
 - utter_happy
 - utter_goodbye
+- utter_restaurant
+- utter_behavior
+- utter_thankyou
 
 templates:
   utter_greet:
@@ -29,3 +35,12 @@ templates:
 
   utter_goodbye:
   - text: "Bye"
+  
+  utter_restaurant:
+  - text: "we will find one for you"
+  
+  utter_behavior:
+  - text: "I am good. Everything going great"
+  
+  utter_thankyou:
+  - text: "Thankyou"

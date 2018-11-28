@@ -158,6 +158,70 @@
       {
         "intent": "thankyou",
         "text": "thanks very much"
+      },
+      {
+        "intent": "behavioral_greet",
+        "text": "how are you"
+      },
+      {
+        "intent": "behavioral_greet",
+        "text": "how is it going"
+      },
+      {
+        "intent": "behavioral_greet",
+        "text": "What is up"
+      },
+      {
+        "intent": "behavioral_greet",
+        "text": "What is going on"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am absolutely alright"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am fine"
+      },
+      {
+        "intent": "mood_great",
+        "text": "great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "doing great"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am not good"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am so sad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am not happy"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am sick"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "No it didn't help"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "I am not satisfied"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "not okay"
       }
     ],
     "regex_features": [],

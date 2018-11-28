@@ -25,3 +25,28 @@
 - thank you
 - thx
 - thanks very much
+
+## intent:behavioral_greet
+- how are you
+- how is it going
+- What is up
+- What is going on
+
+## intent:mood_great
+- I am doing great
+- I am absolutely alright
+- I am fine
+- great
+- doing great
+
+## intent:mood_unhappy
+- I am not good
+- I am so sad
+- I am not happy
+- I am sick
+
+## intent:mood_deny
+- No it didn't help
+- I am not satisfied
+- not okay
+
