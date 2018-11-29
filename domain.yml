@@ -18,6 +18,7 @@ actions:
 - utter_restaurant
 - utter_behavior
 - utter_thankyou
+- utter_default
 
 templates:
   utter_greet:
@@ -44,3 +45,6 @@ templates:
   
   utter_thankyou:
   - text: "Thankyou"
+  
+  utter_default:
+  - text: "I am not sure what you are aiming for."

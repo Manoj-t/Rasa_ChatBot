@@ -20,6 +20,7 @@
     "prev_utter_goodbye",
     "prev_utter_restaurant",
     "prev_utter_behavior",
-    "prev_utter_thankyou"
+    "prev_utter_thankyou",
+    "prev_utter_default"
   ]
 }
