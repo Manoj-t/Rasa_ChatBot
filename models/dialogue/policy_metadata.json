@@ -3,20 +3,20 @@
     "action_listen": {
       "slots": []
     },
-    "utter_restaurant": {
-      "slots": []
-    },
-    "utter_thankyou": {
-      "slots": []
-    },
     "utter_goodbye": {
       "slots": []
     },
     "utter_happy": {
       "slots": []
+    },
+    "utter_restaurant": {
+      "slots": []
+    },
+    "utter_thankyou": {
+      "slots": []
     }
   },
-  "rasa_core": "0.12.1",
+  "rasa_core": "0.12.2",
   "python": "3.6.4",
   "max_histories": [
     5,
@@ -29,5 +29,5 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20181129-000220"
+  "trained_at": "20181129-233359"
 }
