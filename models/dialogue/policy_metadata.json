@@ -3,16 +3,16 @@
     "action_listen": {
       "slots": []
     },
-    "utter_goodbye": {
-      "slots": []
-    },
     "utter_happy": {
       "slots": []
     },
-    "utter_restaurant": {
+    "utter_goodbye": {
       "slots": []
     },
     "utter_thankyou": {
+      "slots": []
+    },
+    "utter_restaurant": {
       "slots": []
     }
   },
@@ -29,5 +29,5 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20181129-233359"
+  "trained_at": "20181130-135111"
 }
