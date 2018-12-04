@@ -35,11 +35,14 @@
 - thank you
 - thx
 - thanks very much
+- thanks
+- thankyou very much
+- thanks a lot
 
 ## intent:behavioral_greet
-- how are you
-- how is it going
-- What is up
+- I am fine. how are you
+- I am good. how is it going
+- great. What is up
 - What is going on
 
 ## intent:mood_great

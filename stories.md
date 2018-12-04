@@ -1,10 +1,10 @@
 ## happy path
 * greet
 - utter_greet
-* mood_great
-- utter_happy
-* restaurant_search
+* restaurant_search{"cuisine": "chinese"}
 - utter_restaurant
+* thankyou
+- utter_thankyou
 
 ## sad path 1
 * greet
@@ -33,8 +33,27 @@
 - utter_greet
 * behavioral_greet
 - utter_behavior
-* restaurant_search
+* restaurant_search{"cuisine": "chinese", "location": "18328"}
 - utter_restaurant
 * thankyou
 - utter_thankyou
 
+## search
+* greet
+- utter_greet
+* behavioral_greet
+- utter_behavior
+* restaurant_search{"cuisine": "chinese"}
+- utter_restaurant
+* thankyou
+- utter_thankyou
+
+## search
+* greet
+- utter_greet
+* behavioral_greet
+- utter_behavior
+* restaurant_search{"location": "north"}
+- utter_restaurant
+* thankyou
+- utter_thankyou

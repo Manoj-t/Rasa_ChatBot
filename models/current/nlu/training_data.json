@@ -162,16 +162,28 @@
         "text": "thanks very much"
       },
       {
-        "intent": "behavioral_greet",
-        "text": "how are you"
+        "intent": "thankyou",
+        "text": "thanks"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thankyou very much"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks a lot"
       },
       {
         "intent": "behavioral_greet",
-        "text": "how is it going"
+        "text": "I am fine. how are you"
       },
       {
         "intent": "behavioral_greet",
-        "text": "What is up"
+        "text": "I am good. how is it going"
+      },
+      {
+        "intent": "behavioral_greet",
+        "text": "great. What is up"
       },
       {
         "intent": "behavioral_greet",
