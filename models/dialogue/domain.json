@@ -1,6 +1,5 @@
 {
   "states": [
-    "intent_behavioral_greet",
     "intent_goodbye",
     "intent_greet",
     "intent_mood_affirm",
@@ -14,12 +13,13 @@
     "prev_action_default_fallback",
     "prev_action_deactivate_form",
     "prev_utter_greet",
+    "prev_utter_goodtohear",
+    "prev_utter_typeofcuisine",
+    "prev_utter_whichlocation",
     "prev_utter_cheer_up",
     "prev_utter_did_that_help",
-    "prev_utter_happy",
     "prev_utter_goodbye",
-    "prev_utter_restaurant",
-    "prev_utter_behavior",
+    "prev_utter_restaurants",
     "prev_utter_thankyou",
     "prev_utter_default"
   ]

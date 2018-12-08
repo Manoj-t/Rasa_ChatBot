@@ -39,6 +39,18 @@
       },
       {
         "intent": "restaurant_search",
+        "text": "food near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "restaurants near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "place near me to eat"
+      },
+      {
+        "intent": "restaurant_search",
         "entities": [
           {
             "start": 31,
@@ -84,6 +96,42 @@
           }
         ],
         "text": "i am looking for an indian spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i am looking for an Desi restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "want to eat spicy food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I would like a Bhaarath food"
       },
       {
         "intent": "restaurant_search",
@@ -174,20 +222,16 @@
         "text": "thanks a lot"
       },
       {
-        "intent": "behavioral_greet",
-        "text": "I am fine. how are you"
+        "intent": "thankyou",
+        "text": "thanks. Have a nice day"
       },
       {
-        "intent": "behavioral_greet",
-        "text": "I am good. how is it going"
+        "intent": "thankyou",
+        "text": "thanks. have a good one."
       },
       {
-        "intent": "behavioral_greet",
-        "text": "great. What is up"
-      },
-      {
-        "intent": "behavioral_greet",
-        "text": "What is going on"
+        "intent": "thankyou",
+        "text": "have a good one"
       },
       {
         "intent": "mood_great",
@@ -203,11 +247,55 @@
       },
       {
         "intent": "mood_great",
+        "text": "I am happy. How about you"
+      },
+      {
+        "intent": "mood_great",
+        "text": "fine"
+      },
+      {
+        "intent": "mood_great",
+        "text": "alright"
+      },
+      {
+        "intent": "mood_great",
+        "text": "good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "going good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "doing good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "happy"
+      },
+      {
+        "intent": "mood_great",
+        "text": "superb"
+      },
+      {
+        "intent": "mood_great",
+        "text": "All good. How are you?"
+      },
+      {
+        "intent": "mood_great",
         "text": "great"
       },
       {
         "intent": "mood_great",
         "text": "doing great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "absolutely fine"
       },
       {
         "intent": "mood_unhappy",
@@ -242,11 +330,11 @@
     "lookup_tables": [],
     "entity_synonyms": [
       {
-        "value": " indian",
+        "value": "indian",
         "synonyms": [
           "Desi",
           "spicy",
-          "Bharath"
+          "Bhaarath"
         ]
       },
       {

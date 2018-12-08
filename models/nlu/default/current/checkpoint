@@ -1,2 +1,0 @@
-model_checkpoint_path: "/Users/manojkumarteluguntla/Downloads/Rasa_Chatbot/./models/nlu/default/current/intent_classifier_tensorflow_embedding.ckpt"
-all_model_checkpoint_paths: "/Users/manojkumarteluguntla/Downloads/Rasa_Chatbot/./models/nlu/default/current/intent_classifier_tensorflow_embedding.ckpt"

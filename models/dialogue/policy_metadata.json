@@ -5,12 +5,6 @@
     },
     "utter_thankyou": {
       "slots": []
-    },
-    "utter_goodbye": {
-      "slots": []
-    },
-    "utter_happy": {
-      "slots": []
     }
   },
   "rasa_core": "0.12.2",
@@ -28,5 +22,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20181203-145225"
+  "trained_at": "20181207-155136"
 }
