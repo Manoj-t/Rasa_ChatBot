@@ -53,13 +53,31 @@
         "intent": "restaurant_search",
         "entities": [
           {
-            "start": 31,
-            "end": 36,
+            "start": 19,
+            "end": 26,
+            "value": "midtown",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "restaurants in the midtown"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 43,
+            "end": 48,
             "value": "north",
             "entity": "location"
           }
         ],
-        "text": "i'm looking for a place in the north of town"
+        "text": "i'm looking for a chines restaurant in the north of town"
       },
       {
         "intent": "restaurant_search",
@@ -326,9 +344,20 @@
         "text": "not okay"
       }
     ],
-    "regex_features": [],
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
     "lookup_tables": [],
     "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": [
+          "chines"
+        ]
+      },
       {
         "value": "indian",
         "synonyms": [
@@ -338,7 +367,7 @@
         ]
       },
       {
-        "value": " center",
+        "value": "center",
         "synonyms": [
           "central",
           "midtown",

@@ -1,8 +1,9 @@
 {
+  "chines": "chinese",
   "desi": "indian",
   "spicy": "indian",
   "bhaarath": "indian",
-  "central": " center",
-  "midtown": " center",
-  "middle": " center"
+  "central": "center",
+  "midtown": "center",
+  "middle": "center"
 }

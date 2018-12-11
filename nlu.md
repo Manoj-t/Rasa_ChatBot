@@ -13,7 +13,8 @@
 - food near me
 - restaurants near me
 - place near me to eat
-- i'm looking for a place in the [north](location) of town
+- restaurants in the [midtown](cuisine)
+- i'm looking for a [chines](cuisine:chinese) restaurant in the [north](location) of town
 - show me [chinese](cuisine) restaurants
 - show me a [mexican](cuisine) place in this area
 - i am looking for an [indian](cuisine) spot
@@ -26,10 +27,13 @@
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [29432](location)
 
-## synonym: center
+## synonym:center
 - central
 - midtown
 - middle
+
+## regex:zipcode
+- [0-9]{5}
 
 ## intent:thankyou
 - thanks!
