@@ -35,6 +35,9 @@
 ## regex:zipcode
 - [0-9]{5}
 
+## regex:greet
+- hey[^\s]*
+
 ## intent:thankyou
 - thanks!
 - thank you
