@@ -19,6 +19,7 @@ actions:
 - utter_restaurants
 - utter_thankyou
 - utter_default
+- action_restart
 
 templates:
   utter_greet:

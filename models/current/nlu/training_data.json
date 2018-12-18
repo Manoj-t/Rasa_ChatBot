@@ -23,7 +23,19 @@
       },
       {
         "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
         "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
       },
       {
         "intent": "restaurant_search",
@@ -39,15 +51,81 @@
       },
       {
         "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
         "text": "food near me"
       },
       {
         "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Japanese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
+        "text": "Japanese restaurants near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
         "text": "restaurants near me"
       },
       {
         "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
         "text": "place near me to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "russian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "russian near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "italian restaurants near me"
       },
       {
         "intent": "restaurant_search",
@@ -56,7 +134,7 @@
             "start": 19,
             "end": 26,
             "value": "midtown",
-            "entity": "cuisine"
+            "entity": "location"
           }
         ],
         "text": "restaurants in the midtown"
@@ -182,7 +260,7 @@
             "start": 14,
             "end": 19,
             "value": "18328",
-            "entity": "location"
+            "entity": "zipcode"
           }
         ],
         "text": "anywhere near 18328"
@@ -206,7 +284,7 @@
             "start": 29,
             "end": 34,
             "value": "29432",
-            "entity": "location"
+            "entity": "zipcode"
           }
         ],
         "text": "I am looking a restaurant in 29432"
@@ -317,7 +395,15 @@
       },
       {
         "intent": "mood_unhappy",
-        "text": "I am not good"
+        "text": "I am not doing good"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am doing bad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am unhappy"
       },
       {
         "intent": "mood_unhappy",
@@ -345,6 +431,14 @@
       }
     ],
     "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[\\s]*.*"
+      },
+      {
+        "name": "greet",
+        "pattern": "hi+[/s]*.*"
+      },
       {
         "name": "zipcode",
         "pattern": "[0-9]{5}"

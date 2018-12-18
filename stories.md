@@ -11,6 +11,7 @@
 - utter_restaurants
 * thankyou
 - utter_thankyou
+- action_restart
 
 ## happy path with cuisine
 * greet
@@ -57,9 +58,20 @@
 - utter_typeofcuisine
 * restaurant_search{"cuisine": "indian"}
 - utter_whichlocation
-* restaurant_search{"location": "29432"}
+* restaurant_search{"location": "west"}
 - utter_restaurants
 * thankyou
 - utter_thankyou
+
+## happy path with location cuisine
+* greet
+- utter_greet
+* mood_great
+- utter_goodtohear
+* restaurant_search{"cuisine": "indian","location": "north"}
+- utter_restaurants
+* thankyou
+- utter_thankyou
+
 
 

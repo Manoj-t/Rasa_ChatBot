@@ -4,16 +4,22 @@
 - hi
 - good morning
 - good evening
+- good afternoon
 - hey there
+- hi there
+- hii
 
 ## intent:restaurant_search
 - i'm looking for a place to eat
-- I want to grab lunch
+- I want to grab lunch 
 - I am searching for a dinner spot
-- food near me
-- restaurants near me
-- place near me to eat
-- restaurants in the [midtown](cuisine)
+- food [near me](location)
+- [Japanese](cuisine) restaurants [near me](location)
+- restaurants [near me](location)
+- place [near me](location) to eat
+- [russian](cuisine) near me
+- [italian](cuisine) restaurants near me
+- restaurants in the [midtown](location)
 - i'm looking for a [chines](cuisine:chinese) restaurant in the [north](location) of town
 - show me [chinese](cuisine) restaurants
 - show me a [mexican](cuisine) place in this area
@@ -23,9 +29,9 @@
 - I would like a [Bhaarath](cuisine:indian) food
 - search for restaurants in the [center](location)
 - anywhere in the [west](location)
-- anywhere near [18328](location)
+- anywhere near [18328](zipcode)
 - I am looking for [asian fusion](cuisine) food
-- I am looking a restaurant in [29432](location)
+- I am looking a restaurant in [29432](zipcode)
 
 ## synonym:center
 - central
@@ -34,6 +40,10 @@
 
 ## regex:zipcode
 - [0-9]{5}
+
+## regex:greet
+- hey[\s]*.*
+- hi+[/s]*.*
 
 ## intent:thankyou
 - thanks!
@@ -66,7 +76,9 @@
 - absolutely fine
 
 ## intent:mood_unhappy
-- I am not good
+- I am not doing good
+- I am doing bad
+- I am unhappy
 - I am so sad
 - I am not happy
 - I am sick

@@ -5,6 +5,9 @@
     },
     "utter_thankyou": {
       "slots": []
+    },
+    "action_restart": {
+      "slots": []
     }
   },
   "rasa_core": "0.12.2",
@@ -22,5 +25,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20181207-155136"
+  "trained_at": "20181217-160610"
 }
