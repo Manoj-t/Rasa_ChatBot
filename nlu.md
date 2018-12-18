@@ -42,8 +42,12 @@
 - [0-9]{5}
 
 ## regex:greet
+<<<<<<< HEAD
 - hey[\s]*.*
 - hi+[/s]*.*
+=======
+- hey[^\s]*
+>>>>>>> 81cd3bda3fa6ed703409d09cece2dc3720a2b4fc
 
 ## intent:thankyou
 - thanks!
