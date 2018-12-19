@@ -14,7 +14,7 @@
 - I want to grab lunch 
 - I am searching for a dinner spot
 - food [near me](location)
-- [Japanese](cuisine) restaurants [near me](location)
+- [Japanese](cuisine) restaurants [near me](location:here)
 - restaurants [near me](location)
 - place [near me](location) to eat
 - [russian](cuisine) near me
@@ -26,12 +26,14 @@
 - i am looking for an [indian](cuisine) spot
 - i am looking for an [Desi](cuisine:indian) restaurants
 - want to eat [spicy](cuisine:indian) food
-- I would like a [Bhaarath](cuisine:indian) food
+- I would like a [punjabi](cuisine:indian) food
 - search for restaurants in the [center](location)
 - anywhere in the [west](location)
 - anywhere near [18328](zipcode)
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [29432](zipcode)
+- restaurants [here](location)
+- looking for finest food [here](location)
 
 ## synonym:center
 - central
@@ -42,12 +44,14 @@
 - [0-9]{5}
 
 ## regex:greet
-<<<<<<< HEAD
 - hey[\s]*.*
-- hi+[/s]*.*
-=======
-- hey[^\s]*
->>>>>>> 81cd3bda3fa6ed703409d09cece2dc3720a2b4fc
+- hi+[\s]*.*
+
+## regex:restaurant_search
+- [a-zA-Z0-9\s]*restaurants 
+- restaurants[a-zA-Z0-9\s]*
+- [a-zA-Z0-9\s]*food
+- food[a-zA-Z0-9\s]*
 
 ## intent:thankyou
 - thanks!
@@ -78,6 +82,9 @@
 - doing great
 - I am good
 - absolutely fine
+
+## regex:mood_great
+- doing[\s]*(good|great|awesome)
 
 ## intent:mood_unhappy
 - I am not doing good

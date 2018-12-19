@@ -73,7 +73,7 @@
           {
             "start": 21,
             "end": 28,
-            "value": "near me",
+            "value": "here",
             "entity": "location"
           }
         ],
@@ -222,12 +222,12 @@
         "entities": [
           {
             "start": 15,
-            "end": 23,
+            "end": 22,
             "value": "indian",
             "entity": "cuisine"
           }
         ],
-        "text": "I would like a Bhaarath food"
+        "text": "I would like a punjabi food"
       },
       {
         "intent": "restaurant_search",
@@ -288,6 +288,30 @@
           }
         ],
         "text": "I am looking a restaurant in 29432"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants here"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "looking for finest food here"
       },
       {
         "intent": "thankyou",
@@ -437,7 +461,27 @@
       },
       {
         "name": "greet",
-        "pattern": "hi+[/s]*.*"
+        "pattern": "hi+[\\s]*.*"
+      },
+      {
+        "name": "mood_great",
+        "pattern": "doing[\\s]*(good|great|awesome)"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "[a-zA-Z0-9\\s]*food"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "[a-zA-Z0-9\\s]*restaurants"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "food[a-zA-Z0-9\\s]*"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "restaurants[a-zA-Z0-9\\s]*"
       },
       {
         "name": "zipcode",
@@ -446,6 +490,12 @@
     ],
     "lookup_tables": [],
     "entity_synonyms": [
+      {
+        "value": "here",
+        "synonyms": [
+          "near me"
+        ]
+      },
       {
         "value": "chinese",
         "synonyms": [
@@ -457,7 +507,7 @@
         "synonyms": [
           "Desi",
           "spicy",
-          "Bhaarath"
+          "punjabi"
         ]
       },
       {
