@@ -1,9 +1,12 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1671
 {\fonttbl\f0\froman\fcharset0 TimesNewRomanPS-BoldMT;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\froman\fcharset0 TimesNewRomanPS-ItalicMT;
-\f3\froman\fcharset0 TimesNewRomanPS-BoldItalicMT;\f4\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red191\green191\blue191;}
-{\*\expandedcolortbl;;\csgray\c100000;\csgray\c79525;}
-\margl1440\margr1440\vieww27840\viewh15320\viewkind0
+\f3\fnil\fcharset0 HelveticaNeue;\f4\fswiss\fcharset0 Helvetica;\f5\fnil\fcharset0 HelveticaNeue-Italic;
+\f6\froman\fcharset0 TimesNewRomanPS-BoldItalicMT;}
+{\colortbl;\red255\green255\blue255;\red129\green95\blue3;\red255\green255\blue255;\red0\green0\blue0;
+\red14\green14\blue255;\red255\green255\blue255;\red191\green191\blue191;}
+{\*\expandedcolortbl;;\csgenericrgb\c50580\c37140\c1210;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c0\c0\c0;
+\csgenericrgb\c5500\c5500\c100000;\csgray\c100000;\csgray\c79525;}
+\margl1440\margr1440\vieww27840\viewh15280\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
 
 \f0\b\fs48 \cf0 BUILDING A CHATBOT USING RASA STACK\
@@ -110,33 +113,295 @@ Prepare the data in a file and save it as
 \f0\b nlu.md
 \f1\b0  file\
 \
-## intent:greet\
-- hey\
-- hello\
-- hi\
-- good morning\
-- good evening\
-- hey there\
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f3\fs40 \cf2 \cb3 ## \cf4 intent:greet
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hey
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hello
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hi
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  good morning
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  good evening
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  good afternoon
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hey there
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hi there
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hii
+\f4\fs24 \cf0 \
 \
-## intent:restaurant_search\
-- i'm looking for a place to eat\
-- I want to grab lunch\
-- I am searching for a dinner spot\
-- i'm looking for a place in the [north](location) of town\
-- show me [chinese](cuisine) restaurants\
-- show me a [mexican](cuisine) place in the [centre](location)\
-- i am looking for an [indian](cuisine) spot\
-- search for restaurants\
-- anywhere in the [west](location)\
-- anywhere near [18328](location)\
-- I am looking for [asian fusion](cuisine) food\
-- I am looking a restaurant in [29432](location)\
+
+\f3\fs40 \cf2 ## \cf4 intent:restaurant_search
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  i'm looking for a place to eat
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I want to grab lunch 
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am searching for a dinner spot
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  food \cf2 [\cf4 near me\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  \cf2 [\cf4 Japanese\cf2 ](\cf5 cuisine\cf2 )\cf4  restaurants \cf2 [\cf4 near me\cf2 ](\cf5 location:here\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  restaurants \cf2 [\cf4 near me\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  place \cf2 [\cf4 near me\cf2 ](\cf5 location\cf2 )\cf4  to eat
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  \cf2 [\cf4 russian\cf2 ](\cf5 cuisine\cf2 )\cf4  near me
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  \cf2 [\cf4 italian\cf2 ](\cf5 cuisine\cf2 )\cf4  restaurants near me
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  restaurants in the \cf2 [\cf4 midtown\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  i'm looking for a \cf2 [\cf4 chines\cf2 ](\cf5 cuisine:chinese\cf2 )\cf4  restaurant in the \cf2 [\cf4 north\cf2 ](\cf5 location\cf2 )\cf4  of town
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  show me \cf2 [\cf4 chinese\cf2 ](\cf5 cuisine\cf2 )\cf4  restaurants
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  show me a \cf2 [\cf4 mexican\cf2 ](\cf5 cuisine\cf2 )\cf4  place in this area
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  i am looking for an \cf2 [\cf4 indian\cf2 ](\cf5 cuisine\cf2 )\cf4  spot
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  i am looking for an \cf2 [\cf4 Desi\cf2 ](\cf5 cuisine:indian\cf2 )\cf4  restaurants
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  want to eat \cf2 [\cf4 spicy\cf2 ](\cf5 cuisine:indian\cf2 )\cf4  food
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I would like a \cf2 [\cf4 punjabi\cf2 ](\cf5 cuisine:indian\cf2 )\cf4  food
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  search for restaurants in the \cf2 [\cf4 center\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  anywhere in the \cf2 [\cf4 west\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  anywhere near \cf2 [\cf4 18328\cf2 ](\cf5 zipcode\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am looking for \cf2 [\cf4 asian fusion\cf2 ](\cf5 cuisine\cf2 )\cf4  food
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am looking a restaurant in \cf2 [\cf4 29432\cf2 ](\cf5 zipcode\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  restaurants \cf2 [\cf4 here\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  looking for finest food \cf2 [\cf4 here\cf2 ](\cf5 location\cf2 )
+\f4\fs24 \cf0 \
 \
-## intent:thankyou\
-- thanks!\
-- thank you\
-- thx\
-- thanks very much\
+
+\f3\fs40 \cf2 ## \cf4 synonym:center
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  central
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  midtown
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  middle
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 regex:zipcode
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  [0-9]\{5\}
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 regex:greet
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hey[\\s]\cf2 *
+\f5\i \cf4 .
+\f3\i0 \cf2 *
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  hi+[\\s]\cf2 *
+\f5\i \cf4 .
+\f3\i0 \cf2 *
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 regex:restaurant_search
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  [a-zA-Z0-9\\s]*restaurants 
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  restaurants[a-zA-Z0-9\\s]*
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  [a-zA-Z0-9\\s]*food
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  food[a-zA-Z0-9\\s]*
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 intent:thankyou
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thanks!
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thank you
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thx
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thanks very much
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thanks
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thankyou very much
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thanks a lot
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thanks. Have a nice day
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  thanks. have a good one.
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  have a good one
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 intent:mood_great
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am doing great
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am absolutely alright
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am fine
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am happy. How about you
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  fine
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  alright
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  good
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  going good
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  doing good
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  happy
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  superb
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  All good. How are you?
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  great
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  doing great
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am good
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  absolutely fine
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 regex:mood_great
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  doing[\\s]*(good|great|awesome)
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 intent:mood_unhappy
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am not doing good
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am doing bad
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am unhappy
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am so sad
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am not happy
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am sick
+\f4\fs24 \cf0 \
+\
+
+\f3\fs40 \cf2 ## \cf4 intent:mood_deny
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  No it didn't help
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  I am not satisfied
+\f4\fs24 \cf0 \
+
+\f3\fs28 \cf2 -\cf4  not okay
+\f4\fs24 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl264\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf0 \cb1 \
 \
 \
 
@@ -144,7 +409,7 @@ Prepare the data in a file and save it as
 \
 
 \f1\b0 Rasa NLU has a number of different components, which together makes a pipeline. We have to create a configuration file and specify which pipeline we want to use. Here we are using pre-defined 
-\f3\i\b tensorflow_embedding
+\f6\i\b tensorflow_embedding
 \f1\i0\b0  pipeline
 \f0\b \
 
@@ -197,8 +462,9 @@ There are two ways that we can run our model, directly from python, or by starti
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f0\b\fs32 \cf0 Test Cases\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f1\b0\fs28 \
+\f1\b0\fs28 \cf0 \
 Testing our model with different test cases.\
 \
 1. Lets test our trained model with message: 
@@ -206,8 +472,9 @@ Testing our model with different test cases.\
 \
 Result:\
 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f4\b0\fs24 {{\NeXTGraphic Screen Shot 2018-11-26 at 1.46.37 PM.png \width26480 \height8400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+\f4\b0\fs24 \cf0 {{\NeXTGraphic Screen Shot 2018-11-26 at 1.46.37 PM.png \width26480 \height8400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
 }¬}
 \f0\b\fs32 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
@@ -248,10 +515,12 @@ Result:\
 \f1\b0 \cf0 \
 
 \f0\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl264\slmult1\pardirnatural\partightenfactor0
 
-\fs48 RASA CORE\
+\fs48 \cf0 RASA CORE\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl264\slmult1\pardirnatural\partightenfactor0
 
-\fs28 					
+\fs28 \cf0 					
 \f1\b0 \
 
 \f0\b\fs32 Installation of Rasa Core\
@@ -342,8 +611,8 @@ Domain file consists of different parts.\
 \cf0 \
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalc \clcbpat2 \clwWidth8100\clftsWidth3 \clheight438 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx4320
-\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight438 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\clvertalc \clcbpat6 \clwWidth8100\clftsWidth3 \clheight438 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight438 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx8640
 \pard\intbl\itap1\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
 
 \f0\b \cf0 intents
@@ -354,8 +623,8 @@ Domain file consists of different parts.\
 \f0\b\fs48 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight422 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx4320
-\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight422 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight422 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight422 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx8640
 \pard\intbl\itap1\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
 
 \fs28 \cf0 actions
@@ -366,8 +635,8 @@ Domain file consists of different parts.\
 \f0\b\fs48 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight431 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx4320
-\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight431 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight431 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight431 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx8640
 \pard\intbl\itap1\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
 
 \fs28 \cf0 templates
@@ -378,8 +647,8 @@ Domain file consists of different parts.\
 \f0\b\fs48 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight373 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx4320
-\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight373 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight373 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight373 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx8640
 \pard\intbl\itap1\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
 
 \fs28 \cf0 entities
@@ -390,8 +659,8 @@ Domain file consists of different parts.\
 \f0\b\fs48 \cell \row
 
 \itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
-\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight441 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx4320
-\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight441 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\clvertalc \clshdrawnil \clwWidth8100\clftsWidth3 \clheight441 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth7280\clftsWidth3 \clheight441 \clbrdrt\brdrs\brdrw20\brdrcf7 \clbrdrl\brdrs\brdrw20\brdrcf7 \clbrdrb\brdrs\brdrw20\brdrcf7 \clbrdrr\brdrs\brdrw20\brdrcf7 \clpadl100 \clpadr100 \gaph\cellx8640
 \pard\intbl\itap1\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
 
 \fs28 \cf0 slots	
@@ -486,8 +755,9 @@ Here are some results of ChatBot responding to user messages.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f4\b0\fs24 \cf0 {{\NeXTGraphic Screen Shot 2018-11-28 at 1.07.23 PM.png \width28740 \height11200 \appleattachmentpadding0 \appleembedtype0 \appleaqc
-}¬}
-\f0\b\fs36 \
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl264\slmult1\pardirnatural\partightenfactor0
 \cf0 \
 
@@ -502,8 +772,9 @@ Here are some results of ChatBot responding to user messages.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f4\b0\fs24 \cf0 {{\NeXTGraphic Screen Shot 2018-11-28 at 1.23.22 PM.png \width28660 \height9140 \appleattachmentpadding0 \appleembedtype0 \appleaqc
-}¬}
-\f0\b\fs28 \
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl264\slmult1\pardirnatural\partightenfactor0
 \cf0 \
 \
@@ -519,6 +790,8 @@ Result 3:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
 \f4\b0\fs24 \cf0 {{\NeXTGraphic Screen Shot 2018-11-28 at 1.37.01 PM.png \width28720 \height9760 \appleattachmentpadding0 \appleembedtype0 \appleaqc
-}¬}
-\f0\b\fs28 \
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 \
+\
 }
