@@ -56,5 +56,5 @@ while True:
         break
     responses = agent.handle_message(a)
     for response in responses:
-        print(response["text"])
+        print(response['text'])
         

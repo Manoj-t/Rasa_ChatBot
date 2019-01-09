@@ -442,6 +442,18 @@
         "text": "I am sick"
       },
       {
+        "intent": "mood_unhappy",
+        "text": "bad mood"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "frustrating"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "going mad"
+      },
+      {
         "intent": "mood_deny",
         "text": "No it didn't help"
       },

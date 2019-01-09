@@ -93,6 +93,9 @@
 - I am so sad
 - I am not happy
 - I am sick
+- bad mood
+- frustrating
+- going mad
 
 ## intent:mood_deny
 - No it didn't help

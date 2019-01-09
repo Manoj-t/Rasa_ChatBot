@@ -73,5 +73,17 @@
 * thankyou
 - utter_thankyou
 
+## greet bad mood restaurant_search with cuisine
+* greet
+- utter_greet
+* mood_unhappy
+- utter_cheer_up
+* restaurant_search{"cuisine":"indian"}
+- utter_whichlocation
+* restaurant_search{"location":"west"}
+- utter_restaurants
+* thankyou
+- utter_thankyou
+
 
 
