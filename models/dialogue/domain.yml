@@ -12,6 +12,7 @@ actions:
 - utter_restaurants
 - utter_thankyou
 - utter_default
+- utter_api
 - action_restart
 config:
   store_entities_as_slots: true
@@ -39,7 +40,17 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  cuisine:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
+  utter_api:
+  - text: api
   utter_cheer_up:
   - text: cheer up!
   utter_default:

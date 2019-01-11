@@ -1,6 +1,10 @@
 slots:
   Person:
     type: text
+  cuisine:
+    type: text
+  location:
+    type: text
 
 intents:
   - greet
@@ -24,6 +28,7 @@ actions:
 - utter_restaurants
 - utter_thankyou
 - utter_default
+- utter_api
 - action_restart
 
 templates:
@@ -59,3 +64,6 @@ templates:
   
   utter_default:
   - text: "I am not sure what you are aiming for."
+  
+  utter_api:
+  - text: "api"
