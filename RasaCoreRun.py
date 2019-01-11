@@ -11,7 +11,7 @@ def call_rest():
     class JIRACLASS(object):
 
         def __init__(self):
-            self.jira = JIRA({'server':'https://gauthamjira.atlassian.net'},basic_auth=('pulipatirajsimha@gmail.com','gautham999')) 
+            self.jira = JIRA({'server':'https://manojteluguntla.atlassian.net'},basic_auth=('manoj.teluguntla@lntinfotech.com','Western852$@')) 
 
         def getProjects(self,data):
             return self.jira.project(data);
@@ -81,7 +81,7 @@ model.train(dat, total_examples=len(dat), epochs=100)
 
 data_words=['hello','hi','what','hey','near']
 
-interpreter = RasaNLUInterpreter('models/current/default/nlu')
+interpreter = RasaNLUInterpreter('models/current/nlu')
 agent = Agent.load('models/dialogue', interpreter=interpreter)
 
 print("Your bot is ready to talk! Type your messages here or send 'stop'")

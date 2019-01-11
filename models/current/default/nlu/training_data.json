@@ -53,13 +53,13 @@
         "intent": "greet",
         "entities": [
           {
-            "start": 10,
-            "end": 16,
+            "start": 18,
+            "end": 24,
             "value": "prachi",
             "entity": "Person"
           }
         ],
-        "text": "hey there prachi here"
+        "text": "hey there This is prachi here"
       },
       {
         "intent": "greet",
@@ -496,6 +496,18 @@
       {
         "intent": "mood_deny",
         "text": "not okay"
+      },
+      {
+        "intent": "api",
+        "text": "jira"
+      },
+      {
+        "intent": "api",
+        "text": "JIRA"
+      },
+      {
+        "intent": "api",
+        "text": "create jira"
       }
     ],
     "regex_features": [

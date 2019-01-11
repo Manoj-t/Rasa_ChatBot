@@ -496,6 +496,10 @@
       {
         "intent": "mood_deny",
         "text": "not okay"
+      },
+      {
+        "intent": "api",
+        "text": "jira"
       }
     ],
     "regex_features": [

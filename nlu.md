@@ -5,7 +5,7 @@
 - good morning
 - good evening
 - good afternoon
-- hey there [prachi](Person) here
+- hey there This is [prachi](Person) here
 - hi there
 - hii
 
@@ -101,4 +101,9 @@
 - No it didn't help
 - I am not satisfied
 - not okay
+
+## intent:api
+- jira
+- JIRA
+- create jira
 
