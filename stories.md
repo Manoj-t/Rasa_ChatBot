@@ -1,6 +1,6 @@
-## happy path
-* greet
-- utter_greet
+## greet with name happy path
+* greet{"Person": "manoj"}
+- utter_greetwithname
 * mood_great
 - utter_goodtohear
 * restaurant_search

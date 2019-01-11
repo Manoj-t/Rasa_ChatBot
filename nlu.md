@@ -1,11 +1,11 @@
 ## intent:greet
-- hey
-- hello
-- hi
+- hey, I am [manoj](Person)
+- hello I am [gautham](Person)
+- hi This is [Himansu](Person)
 - good morning
 - good evening
 - good afternoon
-- hey there
+- hey there [prachi](Person) here
 - hi there
 - hii
 

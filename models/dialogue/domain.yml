@@ -2,6 +2,7 @@
 ---
 actions:
 - utter_greet
+- utter_greetwithname
 - utter_goodtohear
 - utter_typeofcuisine
 - utter_whichlocation
@@ -33,7 +34,11 @@ intents:
     use_entities: true
 - thankyou:
     use_entities: true
-slots: {}
+slots:
+  Person:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_cheer_up:
   - text: cheer up!
@@ -47,6 +52,8 @@ templates:
   - text: Good to hear. How can I help you today?
   utter_greet:
   - text: Hey! How are you?
+  utter_greetwithname:
+  - text: Hey {Person}! How are you?
   utter_restaurants:
   - text: Here are the list of restaurants you may like to choose
   utter_thankyou:

@@ -1,7 +1,9 @@
 {
   "action_fingerprints": {
     "action_listen": {
-      "slots": []
+      "slots": [
+        "Person"
+      ]
     },
     "utter_thankyou": {
       "slots": []
@@ -14,16 +16,14 @@
   "python": "3.6.4",
   "max_histories": [
     5,
-    null,
     5,
-    2
+    null
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
-    "rasa_core.policies.keras_policy.KerasPolicy",
-    "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.form_policy.FormPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190109-141457"
+  "trained_at": "20190110-155329"
 }
