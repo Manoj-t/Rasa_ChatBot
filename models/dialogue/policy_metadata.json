@@ -2,18 +2,15 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "location",
         "Person",
-        "cuisine",
-        "location"
+        "cuisine"
       ]
     },
     "utter_thankyou": {
       "slots": []
     },
     "action_restart": {
-      "slots": []
-    },
-    "utter_api": {
       "slots": []
     }
   },
@@ -30,5 +27,5 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190111-102941"
+  "trained_at": "20190122-203048"
 }

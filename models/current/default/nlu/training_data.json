@@ -386,6 +386,10 @@
         "text": "have a good one"
       },
       {
+        "intent": "thankyou",
+        "text": "okay Thanks"
+      },
+      {
         "intent": "mood_great",
         "text": "I am doing great"
       },

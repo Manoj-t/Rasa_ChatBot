@@ -48,7 +48,7 @@ templates:
   - text: "sure. which location you prefer?"
 
   utter_cheer_up:
-  - text: "cheer up!"
+  - text: "cheer up! How can I help you today"
 
   utter_did_that_help:
   - text: "Did that help you?"

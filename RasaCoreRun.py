@@ -1,4 +1,7 @@
+import rasa_core
 from rasa_core.agent import Agent
+from rasa_core.run import serve_application
+from rasa_core.utils import EndpointConfig
 from rasa_core.interpreter import RasaNLUInterpreter
 import gensim
 from gensim.models.fasttext import FastText
@@ -81,7 +84,8 @@ model.train(dat, total_examples=len(dat), epochs=100)
 
 data_words=['hello','hi','what','hey','near']
 
-interpreter = RasaNLUInterpreter('models/current/nlu')
+interpreter = RasaNLUInterpreter('models/current/default/nlu')
+action_endpoint = EndpointConfig(url = "http://localhost:5055/webhook")
 agent = Agent.load('models/dialogue', interpreter=interpreter)
 
 print("Your bot is ready to talk! Type your messages here or send 'stop'")

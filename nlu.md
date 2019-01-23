@@ -64,6 +64,7 @@
 - thanks. Have a nice day
 - thanks. have a good one.
 - have a good one
+- okay Thanks
 
 ## intent:mood_great
 - I am doing great

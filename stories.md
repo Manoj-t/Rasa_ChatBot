@@ -8,6 +8,7 @@
 * restaurant_search{"cuisine": "chinese"}
 - utter_whichlocation
 * restaurant_search{"location": "north"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
@@ -21,6 +22,7 @@
 * restaurant_search{"cuisine": "chinese"}
 - utter_whichlocation
 * restaurant_search{"location": "north"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
@@ -33,6 +35,7 @@
 * restaurant_search{"location": "west"}
 - utter_typeofcuisine
 * restaurant_search{"cuisine": "mexican"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
@@ -45,6 +48,7 @@
 * restaurant_search{"cuisine": "indian"}
 - utter_whichlocation
 * restaurant_search{"location": "29432"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
@@ -59,6 +63,7 @@
 * restaurant_search{"cuisine": "indian"}
 - utter_whichlocation
 * restaurant_search{"location": "west"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
@@ -69,6 +74,7 @@
 * mood_great
 - utter_goodtohear
 * restaurant_search{"cuisine": "indian","location": "north"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
@@ -81,13 +87,11 @@
 * restaurant_search{"cuisine":"indian"}
 - utter_whichlocation
 * restaurant_search{"location":"west"}
+- utter_api
 - utter_restaurants
 * thankyou
 - utter_thankyou
 
-## api
-* api
-- utter_api
 
 
 
